@@ -3,7 +3,7 @@ import os
 from keras.callbacks import (EarlyStopping, ModelCheckpoint, ReduceLROnPlateau,
                              TensorBoard)
 # from tensorflow.keras.optimizers import Adam
-from keras.optimizers import Adam
+from keras.optimizer_v2.adam import Adam
 
 from nets.unet import Unet
 from nets.unet_training import CE, Generator, LossHistory, dice_loss_with_CE
